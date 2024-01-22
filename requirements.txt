@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+plotly
+kaleido==0.1.0.post1
+xlsxwriter
+markdown2
+pdfkit
+htmldocx
