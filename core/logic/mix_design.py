@@ -19,7 +19,6 @@ import tkinter as tk
 from tkinter import ttk
 
 
-# noinspection
 class MixDesignAnalyzer:
     """
     MixDesignAnalyzer class for performing mix design calculations and analysis.
