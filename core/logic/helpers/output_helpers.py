@@ -388,11 +388,6 @@ def load_tk_image(file_path: Path | str | io.BytesIO) -> tk.PhotoImage:
 
     :return: photo_image (ImageTk.PhotoImage): Tkinter PhotoImage object representing the loaded image.
     """
-    # # Open the image using PIL
-    # image = Image.open(path)
-    #
-    # # Convert the PIL image to a Tkinter PhotoImage
-    # photo_image = ImageTk.PhotoImage(image)
     # Handle Path Object
     if isinstance(file_path, Path):
         path = str(file_path)
@@ -425,7 +420,7 @@ def load_tk_image(file_path: Path | str | io.BytesIO) -> tk.PhotoImage:
     return tk.PhotoImage(data=data)
 
 
-def plotly_image_converter(plotly_figure) -> ImageTk.PhotoImage:
+def plotly_image_converter(plotly_figure) -> tk.PhotoImage:
     """Converts a plotly figure to an image(*.png)
 
     Due to a kaleido subprocess error in starting, the following is done before converting the image
