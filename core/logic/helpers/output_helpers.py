@@ -425,7 +425,7 @@ def load_tk_image(file_path: Path | str | io.BytesIO) -> tk.PhotoImage:
     return tk.PhotoImage(data=data)
 
 
-def plotly_image_converter(plotly_figure) -> ImageTk.PhotoImage:
+def plotly_image_converter(plotly_figure) -> tk.PhotoImage:
     """Converts a plotly figure to an image(*.png)
 
     Due to a kaleido subprocess error in starting, the following is done before converting the image
