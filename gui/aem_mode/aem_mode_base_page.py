@@ -5,7 +5,8 @@ All related GUI, data collection, computations are performed in this script
 """
 
 from gui.aem_mode.aem_mode_stages import StageOne, StageTwo, StageThree, StageFour, StageFive
-from gui.aem_mode.aem_results import StageOneResults, StageTwoResults, StageThreeResults, StageFourResults, StageFiveResults
+from gui.aem_mode.aem_results import StageOneResults, StageTwoResults, StageThreeResults, StageFourResults, \
+    StageFiveResults
 from core.logic.helpers.output_helpers import load_tk_image, remove_index
 from core.logic.mix_design import MixDesignAnalyzer
 from core.utils.file_paths import optimix_paths
