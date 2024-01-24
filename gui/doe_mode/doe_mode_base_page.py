@@ -97,11 +97,6 @@ class DoeModePage(tk.Frame):
         self.sv = load_tk_image(optimix_paths.doe_assets['sv_clicked'])
         self.button_image_list = [self.si, self.sii, self.siii, self.siv, self.sv]
 
-        # Create a list of all stage transitioning buttons
-        self.stage_button_list = [self.stage_button_one, self.stage_button_two,
-                                  self.stage_button_three, self.stage_button_four,
-                                  self.stage_button_five]
-
     def display_left_tab(self):
         """
         A large function that displays:
@@ -285,6 +280,11 @@ class DoeModePage(tk.Frame):
             y=550.0
         )
 
+        # Create a list of all stage transitioning buttons
+        self.stage_button_list = [self.stage_button_one, self.stage_button_two,
+                                  self.stage_button_three, self.stage_button_four,
+                                  self.stage_button_five]
+
     def display_bottom_frame(self):
         """
         Displays the following:
@@ -447,7 +447,6 @@ class DoeModePage(tk.Frame):
                 self.index = (self.index - 1) % len(self.stage_frames)
 
                 # Handle stage button changes
-                # noinspection PyTypeChecker
                 self.configure_button_transition(self.index,
                                                  self.button_image_list[self.index],
                                                  self.stage_button_list[self.index])
@@ -488,7 +487,6 @@ class DoeModePage(tk.Frame):
                 self.index = (self.index + 1) % len(self.stage_frames)
 
                 # Handle stage button changes
-                # noinspection PyTypeChecker
                 self.configure_button_transition(self.index,
                                                  self.button_image_list[self.index],
                                                  self.stage_button_list[self.index])
@@ -525,7 +523,6 @@ class DoeModePage(tk.Frame):
                 self.index = (self.index + 1) % len(self.stage_frames)
 
                 # Handle stage button changes
-                # noinspection PyTypeChecker
                 self.configure_button_transition(self.index,
                                                  self.button_image_list[self.index],
                                                  self.stage_button_list[self.index])
@@ -558,7 +555,6 @@ class DoeModePage(tk.Frame):
         # Configure all other buttons to use their default images
         for i in range(len(self.stage_button_list)):
             if i != button_index:
-                # noinspection PyUnresolvedReferences
                 self.stage_button_list[i].configure(image=self.default_stage_images[i])
 
     def switch_to_stage_one(self):
