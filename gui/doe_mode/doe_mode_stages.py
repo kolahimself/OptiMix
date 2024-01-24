@@ -508,7 +508,6 @@ class StageOne(tk.Frame):
         Sets all entries to default
         """
         # Set all entries to their default values
-        # noinspection PyUnresolvedReferences
         [entry.delete(0, tk.END) for entry in self.entry_list]
 
     def special_check(self):
@@ -1206,7 +1205,6 @@ class StageThree(tk.Frame):
     def set_inputs_to_default(self):
         """Sets all text entries and selections to default"""
         # Set all entries to their default values
-        # noinspection PyUnresolvedReferences
         [entry.delete(0, tk.END) for entry in self.entry_list]
 
     def check_fill_status(self):
@@ -1469,7 +1467,6 @@ class StageFour(tk.Frame):
     def set_inputs_to_default(self):
         """Sets all text entries and selections to default"""
         # Set all entries to their default values
-        # noinspection PyUnresolvedReferences
         [entry.delete(0, tk.END) for entry in self.entry_list]
 
     def check_fill_status(self):
@@ -1785,7 +1782,6 @@ class StageFive(tk.Frame):
     def set_inputs_to_default(self):
         """Sets all text entries and selection to default"""
         # Set all entries to their default values
-        # noinspection PyUnresolvedReferences
         [entry.delete(0, tk.END) for entry in self.entry_list]
 
     def check_fill_status(self):
