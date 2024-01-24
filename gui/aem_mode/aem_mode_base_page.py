@@ -329,7 +329,7 @@ class AEMModePage(tk.Frame):
         )
 
         # Data reset button
-        data_reset_button = load_tk_image(optimix_paths.doe_assets['change_design_button'])
+        data_reset_button = load_tk_image(optimix_paths.doe_assets['data_reset'])
         self.bottom_canvas.data_rest = data_reset_button
 
         ttk.Button(

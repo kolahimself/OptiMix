@@ -5,6 +5,7 @@ mix design mode
 """
 
 import tkinter as tk
+from tkinter import font
 
 from core.utils.themes import *
 from core.utils.file_paths import optimix_paths

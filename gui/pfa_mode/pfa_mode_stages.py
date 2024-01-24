@@ -1061,6 +1061,7 @@ class StageTwo(tk.Frame):
         """Sets all text entries and selection to default"""
         # Set all entries to their default values
         [entry.delete(0, tk.END) for entry in self.entry_list]
+        self.entry_list[1].insert(0, "0.3")
 
     def check_fill_status(self):
         """
