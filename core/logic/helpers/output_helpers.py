@@ -8,7 +8,7 @@ import plotly.io as pio
 from tkinter import filedialog
 
 import markdown2
-import pdfkit
+from weasyprint import HTML
 from htmldocx import HtmlToDocx
 
 import numpy as np
@@ -22,7 +22,7 @@ import warnings
 from pathlib import Path
 
 from core.logic.reference_data import generate_full_labels_and_values
-from core.utils.file_paths import optimix_paths, wkhtmltopdf_path
+from core.utils.file_paths import optimix_paths
 from core.utils.themes import colors, white_color
 
 
@@ -315,13 +315,16 @@ def to_pdf(md_file: str, export_path: str):
     :param md_file: (str): The path to the markdown file
     :param export_path: (str): The user specified location for saving
     """
-    # md2pdf(pdf_file_path=export_path, md_file_path=md_file, base_url=DOE_DIR)
+    # Convert the Markdown text to html
     with open(md_file, 'r') as file:
         md_text = file.read()
-
     html_text = markdown2.markdown(md_text)
-    config = pdfkit.configuration(wkhtmltopdf=wkhtmltopdf_path)
-    pdfkit.from_string(html_text, export_path, configuration=config)
+
+    # Get the binary PDF data from the `html_text` string
+    html_doc = HTML(string=html_text, base_url="").write_pdf()
+
+    # Convert to pdf file
+    Path(export_path).write_bytes(html_doc)
 
 
 def to_word(md_file: str, export_location: str):
