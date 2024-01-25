@@ -360,6 +360,3 @@ class ProjectPaths:
 
 # Create a ProjectPath object to be used throughout the app
 optimix_paths = ProjectPaths()
-
-# pdfkit configuration: the wkhtmltopdf executable file location in the user's desktop
-wkhtmltopdf_path = "C:/Program Files/wkhtmltopdf/bin/wkhtmltopdf.exe"
