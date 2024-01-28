@@ -44,6 +44,4 @@ OptiMix's usage guide is available [here](assets/readme/Usage.md)
 - Trial mixing remains essential, you should check whether constituent materials selected for use will behave as designed and adjust accordingly.
 ## Disclaimer
 While every effort has been made to ensure the accuracy and reliability of this tool, users are responsible for exercising their professional judgement and conducting quality control procedures.
-## License
-
 
