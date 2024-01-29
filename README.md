@@ -6,7 +6,7 @@ OptiMix is an interactive software developed with the goal of simplifying concre
 
 https://github.com/kolahimself/OptiMix/assets/73860607/6a4c9812-b22c-4857-a3f6-0075ff451553
 
-With specified targets for compressive strength, workability, durability, OptiMix determines the right proportions of cement, aggregates, water and optional substitute binders (fly-ash or slag) — all in a few clicks.
+With specified targets for compressive strength, workability and durability, OptiMix determines the right proportions of cement, aggregates, water and optional substitute binders (fly-ash or slag) — all in a few clicks.
 
 OptiMix is not intended to supplant or compete with commercially available software packages. Rather, it's a passion project built mainly for exhibition & demonstration's sakes.
 
