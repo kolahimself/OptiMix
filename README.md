@@ -4,6 +4,8 @@
 
 OptiMix is an interactive software developed with the goal of simplifying concrete mix design.
 
+https://github.com/kolahimself/OptiMix/assets/73860607/6a4c9812-b22c-4857-a3f6-0075ff451553
+
 With specified targets for compressive strength, workability, durability, OptiMix determines the right proportions of cement, aggregates, water and optional substitute binders (fly-ash or slag) — all in a few clicks.
 
 OptiMix is not intended to supplant or compete with commercially available software packages. Rather, it's a passion project built mainly for exhibition & demonstration's sakes.
@@ -39,7 +41,7 @@ python optimix_launcher.py
 ### Usage
 OptiMix's usage guide is available [here](assets/readme/Usage.md)
 ## Important Considerations
-- OptiMix is not applicable for high Portland cement/ggbs mixes (>40%). Refer to detailed information from cement manufacturer's or the supplier of ggbs.
+- OptiMix is not applicable for high Portland cement/ggbs mixes (>40%). Refer to detailed information from cement manufacturer or the supplier of ggbs.
 - OptiMix does not currently handle specialty materials like lightweight aggregates or special concrete mixes.
 - Trial mixing remains essential, you should check whether constituent materials selected for use will behave as designed and adjust accordingly.
 ## Disclaimer
